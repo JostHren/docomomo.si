@@ -1,0 +1,268 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.wrapper  {
+	width: 100%;
+	margin: auto;}
+	#content {
+		width: 100%;
+		margin: auto;
+	}
+	#index-content {
+		background-color: #dddddd;
+		height: 250px;
+	}
+	#onas-content {
+		background-color: #dddddd;
+		width: 100%;
+	}
+
+	/* Style the top navigation bar */
+	.topnav {
+		margin-top: 30px;
+	  overflow: hidden;
+	  background-color: white;
+		width: 200px;
+
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.example {background: green;}
+	.wrapper  {
+	width: 100%;
+	margin: auto;}
+	#content {
+		width: 100%;
+		margin: auto;
+	}
+	#index-content {
+		background-color: #dddddd;
+		height: 500px;
+	}
+	#onas-content {
+		background-color: #dddddd;
+		width: 100%;
+	}
+
+	/* Style the top navigation bar */
+	.topnav {
+		margin-top: 30px;
+	  overflow: hidden;
+	  background-color: white;
+		width: 800px;
+
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+		.example {background: green;}
+		.wrapper  {
+		width: 100%;
+		margin: auto;}
+		#content {
+			width: 100%;
+			margin: auto;
+		}
+		#index-content {
+			background-color: #dddddd;
+			height: 800px;
+		}
+		#onas-content {
+			background-color: #dddddd;
+			width: 800px;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			margin-top: 30px;
+		  overflow: hidden;
+		  background-color: white;
+			width: 800px;
+
+		}
+	}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1020px) {
+
+	.wrapper  {
+	width: 1000px;
+	margin: auto; }
+	#content {
+		width: 980px;
+		margin: auto;
+	}
+	#index-content {
+		background-color: #dddddd;
+		height: 800px;
+	}
+	#onas-content {
+		background-color: #dddddd;
+		width: 800px;
+	}
+
+	/* Style the top navigation bar */
+	.topnav {
+		margin-top: 30px;
+	  overflow: hidden;
+	  background-color: white;
+	  width: 900px;
+
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.wrapper  {
+	width: 1000px;
+	margin: auto; }
+	#content {
+		width: 980px;
+		margin: auto;
+	}
+	#index-content {
+		background-color: #dddddd;
+		height: 800px;
+	}
+
+	#onas-content {
+		background-color: #dddddd;
+		width: 800px;
+	}
+
+	/* Style the top navigation bar */
+	.topnav {
+		margin-top: 30px;
+	  overflow: hidden;
+	  background-color: white;
+		width: 900px;
+
+	}
+}
+
+
+body {
+font: 12px Futura, Arial;
+padding: 15px 0px 0px 0px;
+margin: 0;
+}
+
+img.resize {
+		width: 100%; /* you can use % */
+		height: auto;
+}
+
+img.full-size {
+		width: auto; /* you can use % */
+		height: auto;
+}
+
+img.alignright {
+	align: right;
+	float: right;
+	padding: 5px;
+
+}
+
+img.alignleft {
+	align: left;
+	float: left;
+	padding: 5px;
+
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: 60px;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: DimGrey;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+	font-size: 1.1em;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: DimGrey;
+}
+
+.topnav a:active {
+  background-color: #ddd;
+  color: #505050	;
+}
+
+.topnav a.active {
+  background-color: #dddddd;
+  color: #505050	;
+}
+
+
+a, a:visited {
+  color: DimGrey;
+}
+
+a:hover {
+  background-color: lightgrey;
+  color: DimGrey;
+}
+
+p {
+	color: black;
+	line-height: 2;
+	margin-bottom: 20px;
+}
+
+p.eng {
+	color: grey;
+	line-height: 2;
+	margin-bottom: 20px;
+}
+
+p.over {
+	color: grey;
+	line-height: 2;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+#content-wrap {
+	background-color: #dddddd;
+	border-top: 1px;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-style: solid;
+	border-color: DarkGrey;
+	margin-top: 00px;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#footer {
+	background-color: #dddddd;
+	padding-top: 20px;
+}
+
+#siteinfo {
+	background-color: #dddddd;
+	color: lightgrey;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	width: 20%;
+	margin: auto;
+
+}
