@@ -10,5 +10,11 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "routes": [
+    {
+      "pattern": "docomomo.si",
+      "custom_domain": true
+    }
   ]
 }
