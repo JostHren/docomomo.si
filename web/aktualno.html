@@ -57,6 +57,136 @@
           >
         </p>
 
+        <h2>Vladimira Bratuž - Laka (1923 - 2006)</h2>
+
+        <p>
+          V počastitev 20. obletnice smrti arhitektke in kiparke Vladimire
+          Bratuž - Lake (1923 - 2006) ekskluzivno predstavljamo fotografije
+          nastajanja njene znamenite Ribe iz arhiva in s prijaznim dovoljenjem
+          Tomija Kalana. Vsakršno reproduciranje in deljenje fotografij je
+          strogo prepovedano.
+        </p>
+
+        <div class="slideshow-container">
+          <div class="mySlidesLana fade">
+            <img
+              src="./uploads/2026/RibaLAKA1.jpg"
+              style="width: 100%"
+              onclick="stopLana()"
+            />
+          </div>
+          <div class="mySlidesLana fade">
+            <img
+              src="./uploads/2026/RibaLAKA2.jpg"
+              style="width: 100%"
+              onclick="stopLana()"
+            />
+          </div>
+          <div class="mySlidesLana fade">
+            <img
+              src="./uploads/2026/RibaLAKA3.jpg"
+              style="width: 100%"
+              onclick="stopLana()"
+            />
+          </div>
+          <div class="mySlidesLana fade">
+            <img
+              src="./uploads/2026/RibaLAKA4.jpg"
+              style="width: 100%"
+              onclick="stopLana()"
+            />
+          </div>
+          <div class="mySlidesLana fade">
+            <img
+              src="./uploads/2026/RibaLAKA5.jpg"
+              class="center"
+              style="width: 55%"
+              onclick="stopLana()"
+            />
+          </div>
+          <div class="mySlidesLana fade">
+            <img
+              src="./uploads/2026/RibaLAKA6.jpg"
+              style="width: 100%"
+              onclick="stopLana()"
+            />
+          </div>
+
+          <a class="prev" onclick="plusSlidesLana(-1, true)">&lt;</a>
+          <a class="next" onclick="plusSlidesLana(1, true)">&gt;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dotLana" onclick="currentSlideLana(1)"></span>
+          <span class="dotLana" onclick="currentSlideLana(2)"></span>
+          <span class="dotLana" onclick="currentSlideLana(3)"></span>
+          <span class="dotLana" onclick="currentSlideLana(4)"></span>
+          <span class="dotLana" onclick="currentSlideLana(5)"></span>
+          <span class="dotLana" onclick="currentSlideLana(6)"></span>
+        </div>
+
+        <script>
+          let slideIndexLana = 1;
+          let playLana = false;
+          showSlidesLana(slideIndexLana);
+
+          function stopLana() {
+            playLana = false;
+          }
+
+          function autoplayLana() {
+            setTimeout(() => {
+              if (playLana === true) {
+                showSlidesLana((slideIndexLana += 1));
+                autoplayLana();
+              }
+            }, 2000);
+          }
+
+          function plusSlidesLana(n, stopAuto = false) {
+            showSlidesLana((slideIndexLana += n));
+
+            if (stopAuto && slideIndexLana !== 2) {
+              playLana = false;
+
+              return;
+            }
+
+            if (n === 1) {
+              playLana = !playLana;
+              if (playLana === true) autoplayLana();
+            } else {
+              playLana = false;
+            }
+          }
+
+          function currentSlideLana(n) {
+            playLana = false;
+            showSlidesLana((slideIndexLana = n));
+          }
+
+          function showSlidesLana(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlidesLana");
+            let dots = document.getElementsByClassName("dotLana");
+            if (n > slides.length) {
+              slideIndexLana = 1;
+            }
+            if (n < 1) {
+              slideIndexLana = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndexLana - 1].style.display = "block";
+            dots[slideIndexLana - 1].className += " active";
+          }
+        </script>
+
         <h2>
           Svetloba v Miheličevi arhitekturi, razstava fotografij študentov
           arhitekture v Galeriji Bažato Gallery v počastitev 100. obletnice
