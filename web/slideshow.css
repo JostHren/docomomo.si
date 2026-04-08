@@ -8,6 +8,10 @@ body {
 .mySlides {
   display: none;
 }
+
+.mySlidesLana {
+  display: none;
+}
 img {
   vertical-align: middle;
 }
@@ -71,6 +75,17 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 44.5%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotLana {
   cursor: pointer;
   height: 10px;
   width: 10px;
