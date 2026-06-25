@@ -16,13 +16,19 @@
     background-color: #dddddd;
     width: 100%;
   }
+  .publication {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+  }
 
   /* Style the top navigation bar */
   .topnav {
     margin-top: 30px;
     overflow: hidden;
     background-color: white;
-    width: 200px;
+    width: 100%;
   }
 }
 
@@ -30,6 +36,13 @@
 @media only screen and (min-width: 600px) {
   .example {
     background: green;
+  }
+
+  .publication {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
   }
   .wrapper {
     width: 100%;
@@ -53,7 +66,7 @@
     margin-top: 30px;
     overflow: hidden;
     background-color: white;
-    width: 800px;
+    width: 100%;
   }
 }
 
@@ -84,7 +97,7 @@
     margin-top: 30px;
     overflow: hidden;
     background-color: white;
-    width: 800px;
+    width: 100%;
   }
 }
 
@@ -112,7 +125,7 @@
     margin-top: 30px;
     overflow: hidden;
     background-color: white;
-    width: 900px;
+    width: 100%;
   }
 }
 
@@ -141,7 +154,7 @@
     margin-top: 30px;
     overflow: hidden;
     background-color: white;
-    width: 900px;
+    width: 100%;
   }
 }
 
@@ -271,4 +284,27 @@ p.over {
   padding-bottom: 10px;
   width: 20%;
   margin: auto;
+}
+.publication-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Language switcher */
+.lang-switcher {
+  float: right;
+  display: flex;
+  margin-top: 10px;
+  font-size: 14px;
+  color: DimGrey;
+}
+.lang-switcher a {
+  text-decoration: none;
+  padding: 2px 6px;
+  color: DimGrey;
+}
+.lang-switcher a.lang-active {
+  font-weight: bold;
 }
