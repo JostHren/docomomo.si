@@ -16,6 +16,12 @@
     background-color: #dddddd;
     width: 100%;
   }
+  .publication {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+  }
 
   /* Style the top navigation bar */
   .topnav {
@@ -30,6 +36,13 @@
 @media only screen and (min-width: 600px) {
   .example {
     background: green;
+  }
+
+  .publication {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
   }
   .wrapper {
     width: 100%;
@@ -271,6 +284,12 @@ p.over {
   padding-bottom: 10px;
   width: 20%;
   margin: auto;
+}
+.publication-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Language switcher */
